@@ -1,0 +1,58 @@
+[font]
+size = 14.0
+
+[font.normal]
+family = "SauceCodePro Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "SauceCodePro Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "SauceCodePro Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "SauceCodePro Nerd Font Mono"
+style = "Bold Italic"
+
+[window]
+padding = { x = 4, y = 4 }
+opacity = 1.0
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+# Ported from kitty theme: Wallpaper — wallhaven-6k1dj7
+[colors.primary]
+background = "#0f1a1f"
+foreground = "#d2c7bc"
+
+[colors.cursor]
+text = "#0f1a1f"
+cursor = "#d2c7bc"
+
+[colors.selection]
+text = "#d2c7bc"
+background = "#192b34"
+
+[colors.normal]
+black = "#192b34"
+red = "#af6450"
+green = "#6ecf6e"
+yellow = "#cfc66e"
+blue = "#4788b8"
+magenta = "#cf6ecf"
+cyan = "#4d91b2"
+white = "#c2b8ad"
+
+[colors.bright]
+black = "#57646b"
+red = "#bc7d6c"
+green = "#8cd98c"
+yellow = "#d9d28c"
+blue = "#649bc3"
+magenta = "#d98cd9"
+cyan = "#6aa2be"
+white = "#e2dbd5"

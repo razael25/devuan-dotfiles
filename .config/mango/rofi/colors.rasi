@@ -1,0 +1,16 @@
+/* Generated from wallpaper: gruvbox-dark-debian.png */
+
+* {
+    bg:          #282828;
+    fg:          #d2cabc;
+    accent:      #d79921;
+    accent-2:    #519c9f;
+    border:      #d79921;
+    urgent:      #e8645e;
+    selected-fg: #d2cabc;
+    entry-fg:    #519c9f;
+    prompt-fg:   #d79921;
+    header:      #519c9f;
+
+    background-color: @bg;
+}

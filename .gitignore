@@ -1,0 +1,17 @@
+*.bak-*
+.bash_history
+.cache/
+.dbus/
+.mozilla/
+*__pycache__/
+.dotfiles.bak-*/
+.ssh/
+.config/gh/
+.config/opencode/
+.opencode/
+.config/pulse/
+.config/dconf/
+librewolf/
+mozilla/
+*helium*/
+FASTFETCH_DUMP/

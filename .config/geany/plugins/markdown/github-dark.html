@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      /* GitHub Dark preview for Geany's markdown plugin.
+         Palette matches colorschemes/github-dark-default.conf.
+         @@...@@ tokens are filled in from the plugin's preferences. */
+      :root {
+        --bg: @@bg_color@@;
+        --fg: @@fg_color@@;
+        --muted: #8b949e;
+        --border: #30363d;
+        --border-soft: #21262d;
+        --surface: #161b22;
+        --link: #539bf5;
+        --accent: #58a6ff;
+        --green: #3fb950;
+        --yellow: #d29922;
+        --red: #ff7b72;
+        --purple: #bc8cff;
+      }
+
+      html { background: var(--bg); }
+
+      body {
+        font-family: @@font_name@@, "Inter", -apple-system, "Segoe UI", sans-serif;
+        font-size: @@font_point_size@@pt;
+        background-color: var(--bg);
+        color: var(--fg);
+        line-height: 1.6;
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 28px 24px 60px;
+        word-wrap: break-word;
+      }
+
+      /* Headings */
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 1.4em;
+        margin-bottom: 0.6em;
+        font-weight: 600;
+        line-height: 1.25;
+        color: #e6edf3;
+      }
+      h1 { font-size: 2em;   padding-bottom: 0.3em; border-bottom: 1px solid var(--border-soft); }
+      h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid var(--border-soft); }
+      h3 { font-size: 1.25em; }
+      h4 { font-size: 1em; }
+      h5 { font-size: 0.875em; }
+      h6 { font-size: 0.85em; color: var(--muted); }
+      h1:first-child { margin-top: 0; }
+
+      p { margin: 0 0 16px; }
+
+      a { color: var(--link); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      strong { font-weight: 600; color: #e6edf3; }
+      em { font-style: italic; }
+      del { color: var(--muted); }
+
+      /* Lists */
+      ul, ol { margin: 0 0 16px; padding-left: 2em; }
+      li { margin-bottom: 0.25em; }
+      li > p { margin-bottom: 0.5em; }
+      li ul, li ol { margin-top: 0.25em; margin-bottom: 0; }
+
+      /* Task lists */
+      input[type="checkbox"] {
+        margin: 0 0.5em 0.2em -1.4em;
+        vertical-align: middle;
+        accent-color: var(--green);
+      }
+
+      /* Code */
+      code, pre, kbd {
+        font-family: @@code_font_name@@, "SauceCodePro Nerd Font Mono", ui-monospace, monospace;
+        font-size: @@code_font_point_size@@pt;
+      }
+      code {
+        background-color: rgba(110, 118, 129, 0.35);
+        padding: 0.15em 0.4em;
+        border-radius: 6px;
+        color: var(--fg);
+      }
+      pre {
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        line-height: 1.45;
+        margin: 0 0 16px;
+      }
+      pre code {
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+      }
+      kbd {
+        display: inline-block;
+        padding: 2px 5px;
+        font-size: 0.85em;
+        line-height: 1;
+        color: var(--fg);
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-bottom-color: #6e7681;
+        border-radius: 6px;
+        box-shadow: inset 0 -1px 0 #6e7681;
+      }
+
+      /* Blockquotes */
+      blockquote {
+        margin: 0 0 16px;
+        padding: 0 1em;
+        color: var(--muted);
+        border-left: 4px solid var(--border);
+      }
+      blockquote > :last-child { margin-bottom: 0; }
+
+      /* Tables */
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0 0 16px;
+        max-width: 100%;
+        overflow: auto;
+        display: block;
+      }
+      th, td {
+        border: 1px solid var(--border);
+        padding: 6px 13px;
+        text-align: left;
+      }
+      th { font-weight: 600; background-color: var(--surface); }
+      tr { background-color: var(--bg); border-top: 1px solid var(--border-soft); }
+      tr:nth-child(2n) { background-color: var(--surface); }
+
+      hr {
+        height: 1px;
+        border: 0;
+        background-color: var(--border);
+        margin: 24px 0;
+      }
+
+      img { max-width: 100%; height: auto; border-radius: 6px; }
+
+      /* Definition lists, footnotes, misc */
+      dl { margin: 0 0 16px; }
+      dt { font-weight: 600; margin-top: 16px; }
+      dd { margin-left: 0; padding: 0 16px; }
+      sup a { text-decoration: none; }
+      .footnotes { color: var(--muted); font-size: 0.9em; }
+    </style>
+  </head>
+  <body>
+    @@markdown@@
+  </body>
+</html>
