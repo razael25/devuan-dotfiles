@@ -49,15 +49,13 @@ PanelWindow {
             const kids = rightCluster.children
             for (let i = 0; i < kids.length; i++) {
                 const k = kids[i]
-                if (k !== media && k !== metrics && k.visible)
+                if (k !== metrics && k.visible)
                     w += k.width + rightCluster.spacing
             }
             return w
         }
         readonly property real metricsNeed: metrics.implicitWidth + rightCluster.spacing
-        readonly property real mediaNeed: media.implicitWidth + rightCluster.spacing
         readonly property bool fitsMetrics: restWidth + metricsNeed <= width
-        readonly property bool fitsMedia: restWidth + metricsNeed + mediaNeed <= width
 
         // right-click empty bar = the layout/tweaks picker (same popup
         // as clicking the layout button); declared before the clusters
@@ -100,8 +98,6 @@ PanelWindow {
             anchors.verticalCenter: parent.verticalCenter
             spacing: 4
 
-            Media { id: media; allowed: panel.fitsMedia }
-            Weather {}
             Metrics { id: metrics; visible: panel.fitsMetrics }
             Volume {}
             Network {}
