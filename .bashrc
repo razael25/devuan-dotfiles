@@ -113,4 +113,4 @@ if ! shopt -oq posix; then
 fi
 
 # opencode
-export PATH=/home/razael/.opencode/bin:$PATH
+export PATH=$HOME/.opencode/bin:$PATH

@@ -3,4 +3,4 @@ if status is-interactive
 end
 
 # opencode
-fish_add_path /home/razael/.opencode/bin
+fish_add_path $HOME/.opencode/bin
